@@ -1,5 +1,5 @@
 import java.sql.Connection;//inbuilt
-import java.sql.DriverManager;//inbuilt
+import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -15,9 +15,9 @@ public class demo {
         ResultSet rs = st.executeQuery(sql);// create inbuilt interface and store in rs, execute the query
         while(rs.next()) //change line//
         {
-        Integer id = rs.getInt(1);
-        String name = rs.getString(2);//get the value of first column
-        System.out.println(id + " " + name);//print
-    }
+            Integer id = rs.getInt(1);//get id
+            String name = rs.getString(2);//get the value of first column
+            System.out.println(id + " " + name);//print
+        }
     }
 }
